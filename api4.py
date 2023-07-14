@@ -59,7 +59,7 @@ def main():
     if st.button("Calculate Similarity"):
         # Calculate the similarity score
         similarity_score = calculate_similarity(sentence1, sentence2)
-
+        similarity_score = round(similarity_score, 2)
         # Display the similarity score
         st.write("Similarity Score:", similarity_score)
 
